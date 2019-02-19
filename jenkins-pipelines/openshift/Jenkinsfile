@@ -1,6 +1,5 @@
 node ('openstack-jenkins-slave') {
     stage('testing') {
-        sh "echo $openstack-username"
-        sh "echo $openstack-password"
+        sh "env"
     }
 }
