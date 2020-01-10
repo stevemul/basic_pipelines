@@ -10,7 +10,8 @@ spec:
     contextDir: "jenkins"
   strategy:
     jenkinsPipelineStrategy:
-      jenkinsfile: "Jenkinsfile"
+      jenkinsfilePath: "Jenkinsfile"
+    type: JenkinsPipeline
   triggers:
     - type: GitHub
       github:
