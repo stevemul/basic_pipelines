@@ -1,4 +1,4 @@
-node ('openstack-jenkins-slave') {
+node {
     stage('testing') {
         sh "env"
     }

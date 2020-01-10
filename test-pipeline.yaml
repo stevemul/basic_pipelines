@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: "BuildConfig"
+metadata:
+  name: pipelinetest
+spec:
+  source:
+    git:
+      uri: 'https://github.com/stevemul/basic_pipelines.git'
+      ref: 'testing'
+    contextDir: "jenkins"
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfile: "Jenkinsfile"
+  triggers:
+    - type: GitHub
+      github:
+        secret: "stavros"
