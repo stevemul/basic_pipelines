@@ -1,5 +1,6 @@
 node {
     stage('testing') {
         sh "env"
+        sh "date"
     }
 }
